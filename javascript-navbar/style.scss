@@ -19,15 +19,25 @@ $special: #f7b300;
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   color: $accent;
   background-color: $primary;
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 a,
 button {
   color: $accent;
   text-decoration: none;
+  &.primary-btn {
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #133416;
+  }
 }
 .paragraph {
   font-size: 0.9rem;

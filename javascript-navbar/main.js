@@ -1,9 +1,5 @@
 import "./style.scss";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-import { CSSPlugin } from "gsap/all";
-import { gsap } from "gsap/gsap-core";
 
-gsap.registerPlugin(CSSRulePlugin, CSSPlugin)
 let menu_links = document.querySelector(".nav-links-links");
 let menu_btns = document.querySelector(".sign-btns");
 let menubtn = document.querySelector(".mobile-nav-menu");
