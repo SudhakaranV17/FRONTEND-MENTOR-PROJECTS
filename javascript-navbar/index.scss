@@ -1,0 +1,99 @@
+.navbar {
+  position: relative;
+  z-index: 100;
+  padding: 40px 0;
+  .nav-links-links {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      gap: 2rem;
+      padding: 0;
+      margin-bottom: 0;
+      .nav-link-link {
+        position: relative;
+      }
+      .tooltiptext {
+        visibility: hidden;
+        width: 20%;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 15px;
+        position: absolute;
+        z-index: 1;
+        top: 80%;
+        .toolttip-item {
+          display: flex;
+          gap: 0.5rem;
+          .tooltip-title {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .nav-link-link:hover ~ {
+        .tooltiptext {
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .sign-btns {
+    button {
+      border: none;
+      border-radius: 4px;
+      background: transparent;
+    }
+    .try-free {
+      color: #fff;
+      padding: 10px 20px;
+      background-color: #133416;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .nav-links-links,
+    .sign-btns {
+      display: none;
+      position: absolute;
+      z-index: 50;
+    }
+
+    .nav-links-links {
+      top: 100%;
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+      .tooltiptext {
+        display: none;
+      }
+    }
+    .sign-btns {
+      top: 350px;
+      margin-right: 20px;
+    }
+  }
+  .mobile-nav {
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+    &-menu {
+      border: none;
+      background: transparent;
+      svg {
+        width: 50px;
+      }
+    }
+  }
+}
+
+// intro
+.intro {
+  display: flex;
+  &-content {
+    width: 60%;
+  }
+  &-pic {
+    width: 40%;
+  }
+}
